@@ -78,6 +78,7 @@ app.get('/proxy', async (req, res) => {
       // 收集数据
       proxyRes.on('data', (chunk) => {
         data += chunk;
+        console.log(data)
       });
       
       // 请求完成
